@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<title>Chris Elkington</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Images/data_science_background_img.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#about_me" class="w3-button w3-block w3-black">ABOUT ME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#prof_exp" class="w3-button w3-block w3-black">PROFESSIONAL EXPERIENCE</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#projects" class="w3-button w3-block w3-black">MY PROJECTS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT ME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Chris<br>Elkington</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- About Me Container -->
+<div class="w3-container" id="about_me">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-padding-64 w3-center">
+      <span class="w3-tag w3-wide">ABOUT ME</span></h5><br><br>
+      <img src="Images/profile_image.jpg" class="w3-margin w3-circle" alt="Profile Image">
+    </div>
+     <ul><li>Passionate about delivering data analytics solutions</li>
+         <li>Experienced in collecting a data using a variety of techniques</li>
+         <li>Able to effectively pre-process data using Excel, SQL & Python</li>
+         <li>Experienced in utilise Excel and PowerBI to analyse and display the data in a clean & relevant manner</li>    
+         <li>I apply my mathematical knowledge to perform predictive analysis on this data</li>
+     </ul>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>My guiding principle in life is to stay humbled and learn something significantly new each week. Think I'm inexperienced now? Check back in a year.</i></p>
+    </div><br><br>
+  </div>
+</div>
+
+
+<!-- Professional Experience Container -->
+
+<div class="w3-container" id="prof_exp">
+  <div class="w3-content" style="max-width:700px">
+    <div class="w3-padding-64 w3-center">
+      <span class="w3-tag w3-wide">PROFESSIONAL EXPERIENCE</span></h5><br><br>
+      <div class="w3-container w3-responsive">
+        <p>I have just returned to the UK from working in the non-profit sector in Edmonton, Canada. What an amazing 2 years! I had plenty of opportunity to exercise my introspection and to develop on my skillset. I cannot wait to bring my new outlook on life into an exciting new venture in the UK.</p> 
+	<br><table class="w3-table">
+          <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Where</th>
+          </tr>
+          <tr class="w3-white">
+            <td>2018-2020</td>
+            <td>Systems Coordinator</td>
+            <td>Special Olympics Alberta</td>
+          </tr>
+          <tr>
+            <td>2017-2018</td>
+            <td>Systems/Network Administrator</td>
+            <td>Systechnix Ltd.</td>
+          </tr>
+          <tr class="w3-white">
+            <td>2014-2015</td>
+            <td>BSc in Mathematics</td>
+            <td>Keele University</td>
+          </tr>
+        </table>
+        <br><br><br>
+        <a href="Chris_Elkington_CV_31-03-2020.pdf" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Take a look at my CV</a>
+      </div>
+    </div><br>
+  </div>
+</div>
+
+<!-- My Projects Container -->
+<div class="w3-container" id="projects">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MY PROJECTS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'DA');" id="myLink">
+        <div class="w3-col s6 tablink">Data Analytics</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Other');">
+        <div class="w3-col s6 tablink">Other Projects</div>
+      </a>
+    </div>
+
+    <div id="DA" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Daily Routine Analysis</h5>
+      <p class="w3-text-grey">By tracking my daily routines, I took control of my aims and goals. Could this help you too?</p><br>
+    
+      <h5>Nottingham Panthers Ice Hockey Stats</h5>
+      <p class="w3-text-grey">My favourite hockey team has been dissapointing me for years now. So I decided it was about time that I quantify just how dissapointing they are.</p><br>
+    
+      <h5>Edmonton Weather Data</h5>
+      <p class="w3-text-grey">I lived in what is disceptively described as "Sunny Alberta" for 2 years. I knew it got cold in my time there but let's visualize just how cold.</p><br>
+    
+      <h5>Idea</h5>
+      <p class="w3-text-grey">Description of idea</p><br>    
+      
+    </div>
+
+    <div id="Other" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Python program</h5>
+      <p class="w3-text-grey">This is what this program does</p><br>
+    
+      <h5>Playing with SQL databases</h5>
+      <p class="w3-text-grey">Another explanation</p><br>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">GET IN TOUCH</span></h5>
+    <p><span class="w3-tag">Shoot me an email!</span> You can reach me at cpelkington2216@gmail.com. I'd love to hear from you!</p>
+    <p><strong>Alternitavely</strong> you can fill out this form and I'll be sure to get back to you soon.</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
