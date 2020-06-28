@@ -170,7 +170,8 @@ body, html {
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">GET IN TOUCH</span></h5>
     <p><span class="w3-tag">Shoot me an email!</span> You can reach me at cpelkington2216@gmail.com. I'd love to hear from you!</p>
     <p><strong>Alternitavely</strong> you can fill out this form and I'll be sure to get back to you soon.</p>
-    <form action="/action_page.php" target="https://celkington.github.io/chriselkington.github.io/">
+    
+	  <form action="/action_page.php" target="https://celkington.github.io/chriselkington.github.io/">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
@@ -178,6 +179,58 @@ body, html {
     </form>
   </div>
 </div>
+
+<?php
+if (isset($_POST['Email'])) {
+
+
+    $email_to = "cpelkington2216@gmail.com";
+    $email_subject = "Website Form Inquiry";
+
+    function problem($error)
+    {
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br><br>";
+        echo $error . "<br><br>";
+        echo "Please go back and fix these errors.<br><br>";
+        die();
+    }
+
+    // validation expected data exists
+    if (
+        !isset($_POST['Name']) ||
+        !isset($_POST['Email']) ||
+        !isset($_POST['Message'])
+    ) {
+        problem('We are sorry, but there appears to be a problem with the form you submitted.');
+    }
+
+    $name = $_POST['Name']; // required
+    $email = $_POST['Email']; // required
+    $message = $_POST['Message']; // required
+
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+    if (!preg_match($email_exp, $email)) {
+        $error_message .= 'The Email address you entered does not appear to be valid.<br>';
+    }
+
+    $string_exp = "/^[A-Za-z .'-]+$/";
+
+    if (!preg_match($string_exp, $name)) {
+        $error_message .= 'The Name you entered does not appear to be valid.<br>';
+    }
+
+    if (strlen($message) < 2) {
+        $error_message .= 'The Message you entered do not appear to be valid.<br>';
+    }
+
+    if (strlen($error_message) > 0) {
+        problem($error_message);
+    }
+
+    $email_message 
 
 <!-- End page content -->
 </div>
